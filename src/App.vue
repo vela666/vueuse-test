@@ -36,24 +36,13 @@ const {
   excludeAcceptAllOption: true,
 });
 
-// 假设你有一个按钮元素
 const openFile = async () => {
   try {
     await open();
+    console.log(file)
   } catch (err) {
     console.log(err);
   }
 };
-const test = async () => {
-  console.log({
-    isSupported,
-    data,
-    file,
-    fileName,
-    fileMIME,
-    fileSize,
-    fileLastModified,
-    create,
-  });
-};
+
 </script>
